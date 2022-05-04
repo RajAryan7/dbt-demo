@@ -1,9 +1,9 @@
 with orders as  (
-    select * from analytics.dbt_arout.stg_orders
+    select * from {{ref('stg_orders')}}
 ),
 
 payments as (
-    select * from analytics.dbt_arout.stg_payments
+    select * from {{ref('stg_payments')}}
 ),
 
 order_payments as (
