@@ -2,7 +2,7 @@ with customers as (
     select * from analytics.dbt_arout.stg_customers
 ),
 orders as (
-    select * from analytics.dbt_arout_fct_order.fct_orders
+    select * from analytics.dbt_arout.fct_orders
 ),
 customer_orders as (
     select

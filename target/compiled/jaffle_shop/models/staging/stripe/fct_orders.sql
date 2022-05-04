@@ -3,7 +3,7 @@ with orders as  (
 ),
 
 payments as (
-    select * from analytics.dbt_arout_fct_order.stg_payments
+    select * from analytics.dbt_arout.stg_payments
 ),
 
 order_payments as (
